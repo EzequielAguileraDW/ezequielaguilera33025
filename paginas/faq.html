@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="shortcut icon" href="../img/ico-zeque.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 
 <body>
@@ -41,35 +42,86 @@
 
         <h1 id="faqtitle">Preguntas frecuentes</h1>
 
-        <div class="faq">
-            <div class="ask1">
-                <h3>¿Cúal es la zona de cobertura?</h3>
-                <p>Estoy realizando trabajos en Quilmes, Bernal, Don Bosco y Wilde.</p>
+
+        <div class="accordion accordion-flush w-75" id="accordionFlushExample">
+            <div class="accordion-item m-2">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        ¿Cúal es la zona de cobertura?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">- Estoy realizando trabajos en Quilmes, Bernal, Don Bosco y Wilde.</div>
+                </div>
             </div>
-            <div class="ask2">
-                <h3>¿Cúal es el horario de atención?</h3>
-                <p>De lunes a viernes entre las 9 y 18hs. Sábados entre las 10 y las 17hs.</p>
+            <div class="accordion-item m-2">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        ¿Cúal es el horario de atención?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">- De lunes a viernes entre las 9 y 18hs. Sábados entre las 10 y las 17hs.
+                    </div>
+                </div>
             </div>
-            <div class="ask3">
-                <h3>¿Cada cúanto debo realizar un mantenimiento a mi PC?</h3>
-                <p>Para extender la vida de nuestra PC los mantenimientos se deben realizar cada 1 año.</p>
+            <div class="accordion-item m-2">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        ¿Cada cúanto debo realizar un mantenimiento a mi PC?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">- Para extender la vida de nuestra PC los mantenimientos se deben realizar
+                        cada 1 año.</div>
+                </div>
             </div>
-            <div class="ask4">
-                <h3>¿Qué incluye el mantenimiento completo?</h3>
-                <p>El mantenimiento completo incluye: cambio de pasta térmica, limpieza de hardware, gestión de cables,
-                    chequeo
-                    de discos y optimización de Windows.</p>
+            <div class="accordion-item m-2">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        ¿Qué incluye el mantenimiento completo?
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">- El mantenimiento completo incluye: cambio de pasta térmica, limpieza de
+                        hardware, gestión de cables,
+                        chequeo
+                        de discos y optimización de Windows.</div>
+                </div>
             </div>
-            <div class="ask5">
-                <h3>¿Los diagnósticos tienen algún cargo?</h3>
-                <p>No, los diagnósticos se realizan sin cargo.</p>
+            <div class="accordion-item m-2">
+                <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        ¿Los diagnósticos tienen algún cargo?
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">- No, los diagnósticos se realizan sin cargo.</div>
+                </div>
             </div>
-            <div class="ask6">
-                <h3>¿Qué métodos de pagos aceptas?</h3>
-                <p>Se acepta Mercado Pago, transferencia bancaria y efectivo.</p>
+            <div class="accordion-item rounded m-2">
+                <h2 class="accordion-header" id="flush-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        ¿Qué métodos de pagos aceptas?
+                    </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">- Se acepta Mercado Pago, transferencia bancaria y efectivo.</div>
+                </div>
             </div>
         </div>
-
 
 
 
@@ -87,5 +139,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
 
 </html>
