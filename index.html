@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZEQUE.PCFIX</title>
 
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <link rel="shortcut icon" href="./img/ico-zeque.ico">
-    
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -38,7 +40,7 @@
     </nav>
 
     <h1 id="h1index"> Algunos servicios realizados</h1>
-    <div class="galeriaindex">
+    <!-- <div class="galeriaindex">
         
         <div class="galeria-item">
             <img src="./img/wpp1.jpeg" alt="" class="galeria-img">
@@ -49,17 +51,65 @@
         <div class="galeria-img">
             <img src="./img/wpp3.jpeg" alt="" class="galeria-img">
         </div>
-    </div>
+    </div> -->
 
+    <div id="carouselExampleCaptions" class="carousel slide container-fluid" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/wpp2.jpeg" class="d-block w-100" alt="Imágen 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mantenimiento de GPU</h5>
+                    <p>Limpieza de polvo y cambio de pasta térmica.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/wpp3.jpeg" class="d-block w-100" alt="Imágen 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Limpieza de motherboard</h5>
+                    <p>Limpieza de motherboard y cambio de pasta térmica.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/wpp9.jpeg" class="d-block w-100" alt="Imágen 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Cambio de componentes</h5>
+                    <p>Mantenimiento e instalación de nueva memoria RAM.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
     <section>
         <div class="about-me">
             <h2>Acerca de mi</h2>
-            <p>Mi nombre es Ezequiel, tengo 25 años y con más de 5 años de experiencia en servicio técnico, decidí iniciar mi propio emprendimiento <strong>ZEQUE.PCFIX</strong> allá por 2017. </p>
+            <p>Mi nombre es Ezequiel, tengo 25 años y con más de 5 años de experiencia en servicio técnico, decidí
+                iniciar mi propio emprendimiento <strong>ZEQUE.PCFIX</strong> allá por 2017. </p>
 
-            <p>Actualmente además de trabajar en servicio técnico, me encuentro cursando la carrera de <strong>Desarrollo Web</strong> en <strong>Coder House</strong> para ampliar conocimientos en el mundo de la tecnología.</p>
+            <p>Actualmente además de trabajar en servicio técnico, me encuentro cursando la carrera de
+                <strong>Desarrollo Web</strong> en <strong>Coder House</strong> para ampliar conocimientos en el mundo
+                de la tecnología.
+            </p>
 
-            <p>Mi proyecto a futuro es ir aprendiendo nuevas tecnologías e iniciar mi carrera como <strong> Desarrollador Web Front-End</strong>.</p>
+            <p>Mi proyecto a futuro es ir aprendiendo nuevas tecnologías e iniciar mi carrera como <strong>
+                    Desarrollador Web Front-End</strong>.</p>
         </div>
     </section>
     <br> <br> <br>
@@ -68,7 +118,7 @@
         <img src="./img/wpp.ico" alt="">
     </a>
 
-    <footer class="footer"><strong>&copy; 2022 by Ezequiel Aguilera. Todos los derechos reservados</strong></footer>
+    <footer class="footer"><strong>&copy; 2022 by Ezequiel Aguilera. Todos los derechos reservados.</strong></footer>
 
 
     <script src="./js/bootstrap.bundle.js"></script>
