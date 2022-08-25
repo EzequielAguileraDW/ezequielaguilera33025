@@ -120,23 +120,6 @@ label.logo {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* -------- ABOUT ME ------ */
 
 .about-me {
@@ -376,6 +359,39 @@ label.logo {
 }
 
 
+
+/* REDES */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.btn-group .btn {
+    background-color: #0D0D0D;
+    margin: 20px;
+}
+
+.btn a {
+    font-size: 40px;
+}
+
+.btn i {
+    color: whitesmoke;
+}
+
+.btn {
+    transition: .5s;
+}
+
+.btn:hover {
+    font-size: 35px;
+    background: #131313;
+}
+
+.btn-group:hover {
+    text-decoration: none;
+}
 
 
 
@@ -812,6 +828,12 @@ label.logo {
     #h1index {
         font-size: 1.5em;
         margin: 0;
+    }
+
+
+    /* REDES */
+    .btn a {
+        font-size: 30px;
     }
 
 
