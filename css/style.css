@@ -361,29 +361,19 @@ label.logo {
 
 
 /* ------- CLIENTES -------- */
-.clientes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 50px 0px;
-    height: 100vh;
-    margin-top: 30px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "clientes1 clientes1"
-        "clientes2 clientes2";
+.card {
+    background-color: rgb(87, 87, 87);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    margin-left: 35%;
 }
 
-.clientes1 {
-    grid-area: clientes1;
-    text-align: center;
+.card-body h5 {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: bold;
 }
-
-.clientes2 {
-    grid-area: clientes2;
-    text-align: center;
-}
-
 
 
 
@@ -565,12 +555,14 @@ label.logo {
 
 
 
-
-
-
-
-
-
+    /* ---------- CLIENTES ----------- */
+    .card {
+        background-color: rgb(87, 87, 87);
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px;
+        margin-left: 20%;
+    }
 
 
 
@@ -869,7 +861,20 @@ label.logo {
         margin: 15px;
     }
 
-    /* ---- CLIENTES QUERIES -----*/
+
+    /* ---------- CLIENTES ----------- */
+    .card {
+        background-color: rgb(87, 87, 87);
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px;
+        margin-left: 10%;
+    }
+
+
+
+
+
 
 
 
