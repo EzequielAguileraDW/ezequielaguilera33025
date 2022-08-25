@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,600;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Rubik';
+  background-color: #0D0D0D;
+  color: #f5f5f5;
+  overflow-x: hidden; }
+
+/* --- NAVBAR --- */
+.menu {
+  background: #0A0A0A;
+  height: 80px;
+  width: 100vw; }
+  .menu ul {
+    float: right; }
+    .menu ul li {
+      display: inline-block;
+      line-height: 80px; }
+      .menu ul li a {
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        padding-right: 45px;
+        transition: .5s; }
+        .menu ul li a:hover {
+          color: gray; }
+
+label.logo {
+  color: whitesmoke;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 5px 55px;
+  font-weight: bold;
+  font-style: italic; }
+  label.logo a.logo1 {
+    text-decoration: none;
+    color: whitesmoke; }
+
+.checkbtn {
+  font-size: 30px;
+  color: whitesmoke;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none; }
+
+#check {
+  display: none; }
+
+/* ---BOTON WPP--- */
+.btn-wpp {
+  position: fixed;
+  bottom: 75px;
+  right: 120px;
+  z-index: 2; }
+  .btn-wpp img {
+    height: 75px;
+    width: 75px; }
+
+/* ------ Servicios -------*/
+.list-group-item {
+  background: #333333;
+  color: whitesmoke;
+  cursor: default;
+  transition: .4s; }
+  .list-group-item:hover {
+    background-color: #1f1f1f;
+    color: whitesmoke; }
+  .list-group-item h5 {
+    text-transform: uppercase;
+    font-weight: bold; }
+
+/* --- FOOTER ---*/
+.footer {
+  position: static;
+  text-align: center;
+  background-color: #0A0A0A;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 0.8em; }
+
+/* ------------ QUERIES ----------*/
+@media screen and (max-width: 1024px) {
+  label.logo {
+    font-size: 30px;
+    font-style: italic;
+    /* position: fixed; */ }
+  .menu ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #1f1f1f;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s; }
+    .menu ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px; }
+      .menu ul li a {
+        font-size: 1em; }
+        .menu ul li a:hover {
+          color: #707070; }
+  .checkbtn {
+    display: block; }
+  #check:checked ~ ul {
+    left: 0;
+    z-index: 1; } }
+
+.footer {
+  position: static;
+  text-align: center;
+  background-color: #0A0A0A;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 0.7em; }
+
+.btn-wpp {
+  position: fixed;
+  bottom: 65px;
+  right: 30px;
+  z-index: 2; }
+  .btn-wpp img {
+    height: 65px;
+    width: 65px; }
+
+@media screen and (max-width: 480px) {
+  .menu {
+    background-color: #0A0A0A; }
+    .menu ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s; }
+      .menu ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px; }
+        .menu ul li a {
+          font-size: 0.9em; }
+          .menu ul li a:hover {
+            color: #707070; }
+  label.logo {
+    font-size: 22px;
+    margin: 0;
+    /* position: fixed; */
+    font-style: italic; }
+  .checkbtn {
+    display: block;
+    font-size: 24px; }
+  #check:checked ~ ul {
+    left: 0;
+    z-index: 1; } }
+
+.list-group-item h5 {
+  font-size: 15px; }
+
+.list-group-item p {
+  font-size: 12px; }
+
+.list-group-item small {
+  font-size: 8px; }
+
+.btn-wpp {
+  position: fixed;
+  bottom: 65px;
+  right: 30px;
+  z-index: 2; }
+  .btn-wpp img {
+    height: 60px;
+    width: 60px; }
+
+.footer {
+  position: static;
+  text-align: center;
+  background: #0A0A0A;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 0.65em; }
