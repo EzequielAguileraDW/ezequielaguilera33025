@@ -62,7 +62,11 @@ label.logo {
   z-index: 2; }
   .btn-wpp img {
     height: 75px;
-    width: 75px; }
+    width: 75px;
+    transition: .5s; }
+    .btn-wpp img:hover {
+      height: 82px;
+      width: 82px; }
 
 /* ------ Servicios -------*/
 .list-group-item {

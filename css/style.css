@@ -153,9 +153,13 @@ label.logo {
 .btn-wpp img {
     height: 75px;
     width: 75px;
+    transition: .5s;
 }
 
-
+.btn-wpp img:hover {
+    height: 82px;
+    width: 82px;
+}
 
 
 
@@ -668,10 +672,6 @@ label.logo {
 
 
 
-
-
-
-
 @media screen and (max-width:480px) {
     .menu {
         background-color: #0A0A0A;
@@ -835,13 +835,6 @@ label.logo {
     .btn a {
         font-size: 30px;
     }
-
-
-
-
-
-
-
 
 
 
