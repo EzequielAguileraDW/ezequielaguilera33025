@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,600;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+.menu, .footer {
+  background: #0A0A0A;
+  height: 80px;
+  width: 100vw; }
+
 * {
   margin: 0;
   padding: 0;
@@ -12,24 +17,20 @@ body {
   overflow-x: hidden; }
 
 /* --- NAVBAR --- */
-.menu {
-  background: #0A0A0A;
-  height: 80px;
-  width: 100vw; }
-  .menu ul {
-    float: right; }
-    .menu ul li {
-      display: inline-block;
-      line-height: 80px; }
-      .menu ul li a {
-        color: whitesmoke;
-        text-decoration: none;
-        font-size: 0.9em;
-        text-transform: uppercase;
-        padding-right: 45px;
-        transition: .5s; }
-        .menu ul li a:hover {
-          color: gray; }
+.menu ul {
+  float: right; }
+  .menu ul li {
+    display: inline-block;
+    line-height: 80px; }
+    .menu ul li a {
+      color: whitesmoke;
+      text-decoration: none;
+      font-size: 0.9em;
+      text-transform: uppercase;
+      padding-right: 45px;
+      transition: .5s; }
+      .menu ul li a:hover {
+        color: gray; }
 
 label.logo {
   color: whitesmoke;
@@ -85,12 +86,10 @@ label.logo {
 .footer {
   position: static;
   text-align: center;
-  background-color: #0A0A0A;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
   line-height: 50px;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  height: 50px;
+  bottom: 0; }
 
 /* ------------ QUERIES ----------*/
 @media screen and (max-width: 1024px) {
