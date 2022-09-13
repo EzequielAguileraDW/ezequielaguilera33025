@@ -203,17 +203,18 @@ label.logo {
     }
 
     form button {
+        transition: background-color .35s;
         background-color: rgb(87, 87, 87);
         border: 0;
         text-transform: uppercase;
         padding: 1em;
-        cursor: pointer;
 
         &:hover,
         &:focus {
             background-color: rgb(51, 51, 51);
             transition: background-color .35s;
             outline: 0;
+            cursor: pointer;
         }
     }
 }
@@ -272,6 +273,7 @@ label.logo {
 
     &:hover {
         background-color: #181818;
+        color: whitesmoke;
     }
 }
 
@@ -280,9 +282,16 @@ label.logo {
         background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='whitesmoke'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
     }
 
+    &:not(.collapsed) {
+        color: black;
+    }
+
     &:not(.collapsed)::after {
         background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
     }
+    &:focus {
+        box-shadow: none;
+    } 
 }
 
 /* ------------ SERVICIOS ------------ */
@@ -334,16 +343,22 @@ label.logo {
 
 /* REDES */
 
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: default;
+}
+
 .btn-group {
+    height: 90px;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    cursor: default;
 }
 
 .btn {
-    background-color: #0A0A0A;
     margin: 20px;
     transition: .5s;
+    --bs-btn-border-width: 0px;
     a {
         font-size: 35px;
     }
@@ -351,13 +366,32 @@ label.logo {
     i {
         color: whitesmoke;
     }
+}
 
+.bi-instagram {
+    transition: .5s;
     &:hover {
-        background: #131313;
+        font-size: 40px;
+        transition: .5s;
+    }
+}
+
+.bi-github {
+    transition: .5s;
+    &:hover {
+        font-size: 40px;
+        transition: .5s;
     }
 }
 
 
+.bi-linkedin {
+    transition: .5s;
+    &:hover {
+        font-size: 40px;
+        transition: .5s;    
+    }
+}
 
 /* QUERIES */
 
